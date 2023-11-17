@@ -1,6 +1,8 @@
-function Footer() {
+function Footer({ isMobile = false }) {
   const scrollToTop = () => {
-    const nextSection = document.getElementById("section1");
+    const nextSection = document.getElementById(
+      isMobile ? "mobile1" : "section1"
+    );
     if (nextSection) {
       nextSection.scrollIntoView({
         behavior: "smooth",
