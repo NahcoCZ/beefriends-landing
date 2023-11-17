@@ -1,0 +1,81 @@
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.hexagon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #eab308; /* Hex color for a gold-like color */
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+.middle-hexa {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff; /* Hex color for a gold-like color */
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+.hexagon:nth-child(2n) {
+  transform: translateY(40%) translateX(70%);
+}
+
+.hexagon:nth-child(3n) {
+  transform: translateY(80%);
+}
+
+.hexagon:nth-child(4n) {
+  transform: translateY(-45%) translateX(70%);
+  clip-path: polygon(50% 50%, 100% 50%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+.hexagon:nth-child(5n) {
+  transform: translateX(140%);
+}
+
+.hexagon:nth-child(6n) {
+  transform: translateY(-45%) translateX(210%);
+  clip-path: polygon(50% 50%, 100% 50%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+.hexagon:nth-child(7n) {
+  transform: translateY(165%);
+}
+
+.hexagon:nth-child(8n) {
+  transform: translateY(205%) translateX(70%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+.hexagon:nth-child(9n) {
+  transform: translateY(245%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+.hexagon:nth-child(11n) {
+  transform: translateY(120%) translateX(70%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+.hexagon:nth-child(17n) {
+  transform: translateY(0%) translateX(560%);
+}
+
+.hexagon:nth-child(18n) {
+  transform: translateY(40%) translateX(630%);
+}
+
+.hexagon:nth-child(19n) {
+  transform: translateY(80%) translateX(560%);
+}
+
+.hexagon:nth-child(20n) {
+  transform: translateY(-40%) translateX(630%);
+  clip-path: polygon(50% 50%, 100% 50%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
