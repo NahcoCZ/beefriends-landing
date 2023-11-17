@@ -11,10 +11,10 @@ import MobileTwo from "./components/mobile/MobileTwo";
 import MobileContent from "./components/mobile/MobileContent";
 
 export default function App() {
-  const [windowSize, setWindowSize] = useState(window.outerWidth);
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
   useEffect(() => {
     const handleResize = () => {
-      setWindowSize(window.outerWidth);
+      setWindowSize(window.innerWidth);
     };
     handleResize();
     window.addEventListener("resize", handleResize);

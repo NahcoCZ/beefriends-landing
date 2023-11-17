@@ -13,15 +13,23 @@ function Footer({ isMobile = false }) {
     <div className="h-screen snap-start bg-gray-200">
       <div className="bg-yellow-500 w-full h-5/6 rounded-tr-[25%] flex justify-center items-center">
         <div className="text-center">
-          <p className="text-5xl font-extrabold">What are you waiting for?</p>
-          <p className="text-4xl font-semibold">Download BeeFriends now!</p>
+          <p className={`${isMobile ? "text-3xl" : "text-5xl"} font-extrabold`}>
+            What are you waiting for?
+          </p>
+          <p
+            className={`${
+              isMobile ? "text-2xl" : "text-4xl"
+            } mt-4 font-semibold`}
+          >
+            Register for the Closed Testing now to get early access
+          </p>
           <div className="divider divider-accent"></div>
           <div className="w-full flex justify-center mt-6">
             <button
               onClick={scrollToTop}
               className="btn btn-secondary text-xl m-1"
             >
-              Download Now
+              Coming Soon
             </button>
           </div>
         </div>
