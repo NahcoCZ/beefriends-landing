@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-function EaseInComponent({ children }) {
+function EaseInComponent({ children, invertDirection = false }) {
   const controls = useAnimation();
   const componentRef = useRef(null);
 
@@ -27,19 +27,12 @@ function EaseInComponent({ children }) {
     if (componentRef.current) {
       observer.observe(componentRef.current);
     }
-
-    // Cleanup the observer on component unmount
-    return () => {
-      if (componentRef.current) {
-        observer.unobserve(componentRef.current);
-      }
-    };
   }, [controls]);
 
   return (
     <motion.div
       ref={componentRef}
-      initial={{ opacity: 0, x: -50 }}
+      initial={{ opacity: 0, x: invertDirection ? 50 : -50 }}
       animate={controls}
     >
       {children}

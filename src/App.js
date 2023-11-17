@@ -1,7 +1,10 @@
 import SectionOne from "./components/fullscreen/SectionOne";
 import LazyShow from "./components/helper/LazyShow";
-import SectionFour from "./components/fullscreen/SectionFour";
 import SectionTwo from "./components/fullscreen/SectionTwo";
+import SectionThree from "./components/fullscreen/SectionThree";
+import SectionFour from "./components/fullscreen/SectionFour";
+import SectionFive from "./components/fullscreen/SectionFive";
+import Footer from "./components/fullscreen/Footer";
 
 export default function App() {
   return (
@@ -9,12 +12,11 @@ export default function App() {
       <LazyShow>
         <SectionOne />
       </LazyShow>
-      <LazyShow>
-        <SectionTwo />
-      </LazyShow>
-      <LazyShow>
-        <SectionFour />
-      </LazyShow>
+      <SectionTwo />
+      <SectionThree />
+      <SectionFour />
+      <SectionFive />
+      <Footer />
     </div>
   );
 }

@@ -40,7 +40,7 @@ function MainHero() {
               onClick={scrollToNextSection}
               className="btn btn-primary text-lg m-1"
             >
-              Learn More
+              Download Now
             </button>
           </div>
         </div>
