@@ -1,8 +1,8 @@
 import EaseInComponent from "./animations/EaseInComponent";
 
-function Phone({ screenshotLink }) {
+function Phone({ screenshotLink, invertDirection = false }) {
   return (
-    <EaseInComponent>
+    <EaseInComponent invertDirection={invertDirection}>
       <div className="mockup-phone border-primary">
         <div className="camera"></div>
         <div className="display">

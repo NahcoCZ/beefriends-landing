@@ -18,7 +18,10 @@ function SectionFive() {
         </div>
         <div className="w-1/2 bg-yellow-500">
           <div className="w-full h-screen bg-gray-200 rounded-bl-[50%] flex justify-center items-center">
-            <Phone />
+            <Phone
+              screenshotLink={"./assets/openmessage.jpg"}
+              invertDirection
+            />
           </div>
         </div>
       </div>

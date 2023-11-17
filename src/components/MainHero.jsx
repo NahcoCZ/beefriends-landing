@@ -34,13 +34,13 @@ function MainHero() {
         </div>
         <div className="flex-col justify-center items-center mt-4 ml-10">
           <DownloadBadges />
-          <div className="divider text-gray-500">OR</div>
+          <div className="divider divider-primary text-gray-500">OR</div>
           <div className="w-full flex justify-center">
             <button
               onClick={scrollToNextSection}
               className="btn btn-primary text-lg m-1"
             >
-              Download Now
+              Learn More
             </button>
           </div>
         </div>
