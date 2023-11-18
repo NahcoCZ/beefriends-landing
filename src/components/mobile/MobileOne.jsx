@@ -1,4 +1,3 @@
-import DownloadBadges from "../DownloadBadges";
 import Canvas from "../animations/Canvas";
 
 function MobileOne() {
@@ -19,13 +18,25 @@ function MobileOne() {
               Students to forge relationships
             </p>
             <div className="divider divider-accent px-4"></div>
-            <div className="w-full flex justify-center">
+            {/* <div className="w-full flex justify-center">
               <DownloadBadges />
+            </div> */}
+            <div className="w-full text-center">
+              <p className="text-lg font-semibold">Coming Soon...</p>
             </div>
-            <div className="divider divider-primary text-gray-500 mx-8">OR</div>
+            <div className="divider divider-primary text-gray-500 mx-8">
+              {/* OR */}
+            </div>
             <p className="text-center font-semibold">
               Scroll down to learn more
             </p>
+            <div className="w-full flex justify-center">
+              <img
+                src="./assets/down.svg"
+                alt="downarrow"
+                className="opacity-50 w-[64px]"
+              />
+            </div>
           </div>
         </div>
         <Canvas />

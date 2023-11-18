@@ -13,29 +13,38 @@ function Footer({ isMobile = false }) {
     <div className="h-screen snap-start bg-gray-200">
       <div className="bg-yellow-500 w-full h-5/6 rounded-tr-[25%] flex justify-center items-center">
         <div className="text-center">
-          <p className={`${isMobile ? "text-3xl" : "text-5xl"} font-extrabold`}>
+          <p className={`${isMobile ? "text-2xl" : "text-5xl"} font-extrabold`}>
             What are you waiting for?
           </p>
           <p
             className={`${
-              isMobile ? "text-2xl" : "text-4xl"
+              isMobile ? "text-xl" : "text-4xl"
             } mt-4 font-semibold`}
           >
-            Register for the Closed Testing now to get early access
+            Sign up for the Closed Testing now to get early access
           </p>
-          <div className="divider divider-accent"></div>
+          <div
+            className={`divider divider-accent ${isMobile ? "p-4" : ""}`}
+          ></div>
           <div className="w-full flex justify-center mt-6">
-            <button
+            <a
+              href="https://www.jotform.com/"
+              target="_blank"
               onClick={scrollToTop}
               className="btn btn-secondary text-xl m-1"
+              rel="noreferrer"
             >
-              Coming Soon
-            </button>
+              Sign Up
+            </a>
           </div>
         </div>
       </div>
       <div className="h-1/6 w-full bg-yellow-500">
-        <div className="h-full w-full bg-accent rounded-t-[10%] text-white pt-6 text-center">
+        <div
+          className={`h-full w-full bg-accent rounded-t-[10%] text-white text-center ${
+            isMobile ? "pt-2" : "pt-6 "
+          }`}
+        >
           <p>Follow us on Instagram!</p>
           <a
             href="https://www.instagram.com/beefriendsapp/"
@@ -48,9 +57,9 @@ function Footer({ isMobile = false }) {
               alt="IG Icon"
               className="h-[32px]"
             />
-            <p className="ml-2">@beefriendsapp</p>
+            <p className="ml-2 text-blue-500 underline">@beefriendsapp</p>
           </a>
-          <p className="mt-6">BeeFriends Team</p>
+          <p className={`${isMobile ? "" : "mt-6"}`}>BeeFriends Team</p>
         </div>
       </div>
     </div>
