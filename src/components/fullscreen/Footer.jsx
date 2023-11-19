@@ -31,7 +31,7 @@ function Footer({ isMobile = false }) {
               href="http://closedtestingregistration.beefriendsapp.com/"
               target="_blank"
               onClick={scrollToTop}
-              className="btn btn-secondary text-xl m-1"
+              className="btn btn-secondary text-xl m-1 text-white"
               rel="noreferrer"
             >
               Sign Up Now!
