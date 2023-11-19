@@ -10,7 +10,7 @@ function Footer({ isMobile = false }) {
     }
   };
   return (
-    <div className="h-screen snap-start bg-gray-200">
+    <div className="h-screen snap-start bg-gray-200" id="footer">
       <div className="bg-yellow-500 w-full h-5/6 rounded-tr-[25%] flex justify-center items-center">
         <div className="text-center">
           <p className={`${isMobile ? "text-2xl" : "text-5xl"} font-extrabold`}>
@@ -28,13 +28,13 @@ function Footer({ isMobile = false }) {
           ></div>
           <div className="w-full flex justify-center mt-6">
             <a
-              href="https://www.jotform.com/"
+              href="http://closedtestingregistration.beefriendsapp.com/"
               target="_blank"
               onClick={scrollToTop}
               className="btn btn-secondary text-xl m-1"
               rel="noreferrer"
             >
-              Sign Up
+              Sign Up Now!
             </a>
           </div>
         </div>

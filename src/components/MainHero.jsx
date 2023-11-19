@@ -1,8 +1,16 @@
-import React from "react";  
+import React from "react";
 
 function MainHero() {
   const scrollToNextSection = () => {
     const nextSection = document.getElementById("section2");
+    if (nextSection) {
+      nextSection.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+  const scrollToBottom = () => {
+    const nextSection = document.getElementById("footer");
     if (nextSection) {
       nextSection.scrollIntoView({
         behavior: "smooth",
@@ -32,11 +40,17 @@ function MainHero() {
           </p>
         </div>
         <div className="h-[160px] flex items-end">
-          <div className="ml-16 w-[240px]">
-            <p className="text-center text-xl font-semibold mb-4">
-              Coming Soon...
-            </p>
-            <div className="divider divider-accent"></div>
+          <div className="ml-16 w-[300px]">
+            <div className="w-full text-center">
+              <p>Want to be one of the first users?</p>
+              <button
+                onClick={scrollToBottom}
+                className="btn btn-secondary text-lg mt-1 text-white"
+              >
+                Sign up for closed testing here!
+              </button>
+            </div>
+            <div className="divider divider-accent">OR</div>
             <div className="flex justify-center w-full">
               <button
                 onClick={scrollToNextSection}

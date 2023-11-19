@@ -1,6 +1,14 @@
 import Canvas from "../animations/Canvas";
 
 function MobileOne() {
+  const scrollToBottom = () => {
+    const nextSection = document.getElementById("footer");
+    if (nextSection) {
+      nextSection.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <div id="mobile1" className="h-screen snap-start bg-gray-200">
       <div className="h-screen flex flex-col justify-between z-10">
@@ -22,11 +30,15 @@ function MobileOne() {
               <DownloadBadges />
             </div> */}
             <div className="w-full text-center">
-              <p className="text-lg font-semibold">Coming Soon...</p>
+              <p>Want to be one of the first users?</p>
+              <button
+                onClick={scrollToBottom}
+                className="btn btn-secondary text-lg mt-1"
+              >
+                Sign up for closed testing here!
+              </button>
             </div>
-            <div className="divider divider-primary text-gray-500 mx-8">
-              {/* OR */}
-            </div>
+            <div className="divider divider-primary text-gray-500 mx-8">OR</div>
             <p className="text-center font-semibold">
               Scroll down to learn more
             </p>
