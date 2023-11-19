@@ -4,9 +4,9 @@ function SectionFour() {
   return (
     <div id="section4" className="h-screen snap-start bg-yellow-500">
       <div className="bg-gray-200 flex items-center justify-center h-screen w-full rounded-tr-[25%] rounded-bl-[25%]">
-        <EaseInComponent>
-          <div className="w-screen px-24 flex text-center">
-            <div className="w-1/3">
+        <div className="w-screen px-24 flex text-center">
+          <div className="w-1/3">
+            <EaseInComponent>
               <div className="flex justify-center items-center">
                 <img
                   src="./assets/chat.svg"
@@ -21,8 +21,10 @@ function SectionFour() {
                 BeeFriends has a feature-rich messaging system, allowing a
                 pleasant experience when chatting
               </p>
-            </div>
-            <div className="w-1/3">
+            </EaseInComponent>
+          </div>
+          <div className="w-1/3">
+            <EaseInComponent>
               <div className="flex justify-center items-center">
                 <img
                   src="./assets/handshake.svg"
@@ -36,8 +38,10 @@ function SectionFour() {
                 You can send friend request to your matches as well as accept or
                 reject request from other matches
               </p>
-            </div>
-            <div className="w-1/3">
+            </EaseInComponent>
+          </div>
+          <div className="w-1/3">
+            <EaseInComponent>
               <div className="flex justify-center items-center">
                 <img
                   src="./assets/user-detail.svg"
@@ -52,9 +56,9 @@ function SectionFour() {
                 your matches will be unlocked. Allowing you to view their name
                 as well as pictures
               </p>
-            </div>
+            </EaseInComponent>
           </div>
-        </EaseInComponent>
+        </div>
       </div>
     </div>
   );

@@ -33,7 +33,7 @@ function MobileOne() {
               <p>Want to be one of the first users?</p>
               <button
                 onClick={scrollToBottom}
-                className="btn btn-secondary text-lg mt-1"
+                className="btn btn-secondary text-lg mt-1 text-white"
               >
                 Sign up for closed testing here!
               </button>
