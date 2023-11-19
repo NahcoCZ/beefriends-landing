@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 function Footer({ isMobile = false }) {
+  const navigate = useNavigate();
   const scrollToTop = () => {
     const nextSection = document.getElementById(
       isMobile ? "mobile1" : "section1"
@@ -45,7 +48,7 @@ function Footer({ isMobile = false }) {
             isMobile ? "pt-2" : "pt-6 "
           }`}
         >
-          <p>Follow us on Instagram!</p>
+          <p className="text-gray-400">Follow us on Instagram!</p>
           <a
             href="https://www.instagram.com/beefriendsapp/"
             target="_blank"
@@ -59,7 +62,17 @@ function Footer({ isMobile = false }) {
             />
             <p className="ml-2 text-blue-500 underline">@beefriendsapp</p>
           </a>
-          <p className={`${isMobile ? "" : "mt-6"}`}>BeeFriends Team</p>
+          <p className={`${isMobile ? "" : "mt-4"} text-gray-400`}>
+            BeeFriends Team &#183;{" "}
+            <span>
+              <button
+                onClick={() => navigate("/privacy-policy")}
+                className="hover:text-blue-400 hover:underline"
+              >
+                Privacy Policy
+              </button>
+            </span>
+          </p>
         </div>
       </div>
     </div>
