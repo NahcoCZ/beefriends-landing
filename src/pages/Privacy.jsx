@@ -14,15 +14,19 @@ function Privacy() {
       <header className="navbar bg-primary text-black">
         <div className="flex">
           <button className="flex items-center" onClick={backToHome}>
-            <img src="./assets/logo.png" alt="logo" className="w-[96px]" />
-            <p className="text-5xl font-extrabold">BeeFriends</p>
+            <img
+              src="./assets/logo.png"
+              alt="logo"
+              className="w-[64px] md:w-[96px]"
+            />
+            <p className="text-2xl md:text-5xl font-extrabold">BeeFriends</p>
           </button>
           <div className="divider divider-accent divider-horizontal"></div>
-          <p className="font-bold text-3xl">Privacy Policy</p>
+          <p className="font-bold text-xl md:text-3xl">Privacy Policy</p>
         </div>
       </header>
       <main className="p-6">
-        <div className="card bg-white shadow-2xl max-h-[80vh]">
+        <div className="card bg-white shadow-2xl max-h-[80vh] md:pr-4">
           <div className="card-body overflow-y-auto">
             <p className="card-title font-bold text-2xl">
               BeeFriends App Privacy Policy
